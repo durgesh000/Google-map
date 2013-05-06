@@ -1,0 +1,12 @@
+                                         GOOGLE MAP LOCATION SEARCH
+
+This is my first php mysql javascript jquery application, use Google Maps with a MySQL database to create a store locator.
+
+HOW TO USE:-
+1. Create The DATABASE (My DATABASE Name Is mymap).
+2. Create The TABLE    (My TABLE Name Is location).
+3. insert in Table Id, Name, Address, lat, and lng.
+4. Start Using mysqlsearcch.php, connect to DATABASE (Find Locations with MySQL).  
+5. Start Usingh index.php (Craeating  The Map, Searching Near Geocode, Loading the XML file, Creating Markers & the
+   Sidebar).
+Enjoy. :)
