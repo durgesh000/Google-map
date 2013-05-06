@@ -30,7 +30,7 @@ if (!$db_selected) {
   die ('Can not use database: ' . mysql_error());
 }
 
-// Select all the rows in the markers table
+// Select all the rows in the location table
 $query = sprintf("SELECT address, name, lat, lng, ( 3959 * acos( cos( radians('%s') ) * cos( radians( lat ) ) * cos( radians( lng ) - radians('%s') ) + sin( radians('%s') ) * sin( radians( lat ) ) ) ) AS distance FROM location HAVING distance < '%s' ORDER BY distance LIMIT 0 , 20",
   mysql_real_escape_string($center_lat),
   mysql_real_escape_string($center_lng),
